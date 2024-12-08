@@ -4,9 +4,9 @@ print(items)
 
 animeChar = ['Boruto','Deku','Bakugo','Sarada','Saitama','Kankuro']
 
-emptyList = [x for x in range(11) if x%2 ==1]
+numbers = [16,100,10,2,66,43,32,11]
+print(numbers)
 
-print(emptyList)
-
-
+animeChar.sort(key = str.upper)
+print('sort', animeChar)
 
