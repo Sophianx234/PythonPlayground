@@ -12,6 +12,8 @@ numNumbers = int(input("How many numbers would you like ?\n"))
  
 genPassword = []
 
+
+
 for x in range(numLetters):
     print(x)
     genPassword.append(random.choice(letters))
@@ -19,4 +21,9 @@ for x in range(numSymbols):
     genPassword.append(random.choice(symbols))
 for x in range(numNumbers):
     genPassword.append(random.choice(numbers))
-print(''.join(genPassword))
+finalPassword = []    
+for x in genPassword:
+    finalPassword.append(random.choice(genPassword))
+    
+print(finalPassword) 
+print(''.join(finalPassword)) 
