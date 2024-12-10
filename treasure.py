@@ -32,3 +32,4 @@ if path.lower() == 'wait':
         print('You win!')
     else: 
         print("Game Over")
+    
