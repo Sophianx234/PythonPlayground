@@ -20,3 +20,10 @@ for x in scores:
 print(maxScore)
 
 print(max(scores))
+
+choice = input("what is your choice mate ? right or left?")
+
+while choice != 'left':
+    print(choice)
+    choice = input("what is your choice mate ? right or left?")
+    

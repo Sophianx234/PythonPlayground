@@ -15,7 +15,7 @@ genPassword = []
 
 
 for x in range(numLetters):
-    print(x)
+    
     genPassword.append(random.choice(letters))
 for x in range(numSymbols):
     genPassword.append(random.choice(symbols))
