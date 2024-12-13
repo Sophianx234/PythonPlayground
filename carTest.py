@@ -19,3 +19,22 @@ class Student:
     
         
 print(Student.class_year)
+
+class Animal:
+    def __init__(self,name):
+        self.is_alive = True
+        self.name = name
+    def eating(self):
+        print(f'{self.name} is eating')
+    def sleep(self):
+        print(f'{self.name} is sleeping')
+    
+
+class Dog(Animal):
+    def speak(self):
+        print('woof')
+
+dog = Dog('Scooby Doo')
+
+print(dog.speak())
+        
