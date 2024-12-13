@@ -8,7 +8,7 @@ alphabets = [
 def encrypt(text,shift):
     encoded = []
     for x in text:
-        x in alphabets
+        
         if x == ' ':
             continue
         encoded.append(alphabets[alphabets.index(x)+shift])
@@ -16,9 +16,9 @@ def encrypt(text,shift):
 def decrypt(text,shift):
     decoded = []
     for x in text:
-        x in alphabets
-        if x == ' ':
-            continue
+        
+        if x == '_':
+            decoded.append(' ')
         decoded.append(alphabets[alphabets.index(x)-shift])
     return ''.join(decoded)
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt: \n").lower()
